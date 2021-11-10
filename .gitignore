@@ -1,2 +1,4 @@
 /.vscode
 /test
+/contracts/Migrations.sol
+/contracts/SimpleStorage.sol
