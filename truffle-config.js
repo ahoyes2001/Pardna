@@ -1,0 +1,27 @@
+const path = require("path");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+const mnemonic = "rib ability topple vibrant liquid inject nasty glance inmate horn frog negative";
+
+module.exports = {
+  // See <http://truffleframework.com/docs/advanced/configuration>
+  // to customize your Truffle configuration!
+  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
+  networks: {
+    develop: {
+      port: 8545
+    },
+
+    development:{
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: 5777,
+      provider: function(){return new HDWalletProvider(mnemonic, "http://127.0.0.1:7545")}
+    }
+  },
+
+  compilers:{
+    solc:{
+      version: '^0.8.0'
+    }
+  }
+};
