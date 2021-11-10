@@ -32,3 +32,5 @@ I've reinvented the idea of the banker, they never touch any funds and cannot ch
 * Migrate from ETH to a JMD-Pegged stablecoin (to provide a familiar face as a gateway to crypto for a population largely unaware of crypto)
 * Tidy up the ~all out dependence~ slight overuse of codeToPardna[_inviteCode].
 * General optimizations and housekeeping that would make it ready for production deployment which it is currently light years away from.
+* Employ the use of an oracle for true random number generation to make invite codes less deterministic
+* Use an oracle or eth alarm clock to run ThrowTracker() automatically
